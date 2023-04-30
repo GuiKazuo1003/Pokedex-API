@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+    <div class="container">
+        <div class="card-header text-center">
+            <h1>Pokedex</h1>
+        </div>
+        <div class="body">
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                        <div class="card-header">
+                            <h5 class="card-title">{{pokemon.name}}</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="image">
+                                        <img src="{{getFotoPokemon()}}"
+                                          alt="{{pokemon.name}}" />
+                                      </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="button">
+                                        <button class="btn btn-primary" (click)="ProximoPokemon()">Próximo</button>
+                                        <button class="btn btn-primary" (click)="AnteriorPokemon()">Anterior</button>
+                                    </div>
+                                  </div>
+                        <div class="row">
+                            <div class="button d-flex justify-content-between">
+                                <button class="btn btn-primary" (click)="AnteriorPokemon()">Anterior</button>
+                                <button class="btn btn-primary" (click)="ProximoPokemon()">Próximo</button>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+             </div>
+        </div>
+    </div>
+
+
