@@ -1,4 +1,56 @@
-.buttonAnterior {
-    height: 100px;
-    width: 100px;
-}
+.id {
+    color: black;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px; /* adiciona bordas arredondadas para um visual de botão */
+    display: inline-block; /* faz o background se comportar como um elemento em linha para que possa ser clicado */
+    font-family: sans-serif
+  }
+  .nomePokemon{
+    color: black;
+  }
+  .tipo {
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tipo strong {
+    margin-bottom: 5px;
+  }
+  
+ .container {
+    background-color: rgb(201, 201, 201);
+    border-radius: 20px;
+ }
+ .card-header {
+    border-radius: 20px;
+ }
+ * {
+    background-color: rgb(165, 165, 165);
+    border-radius: 20px;
+ }
+ h1{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+ }
+ .btnPro {
+    background-color: rgb(60, 60, 200);
+ }
+ .btnAnt {
+    background-color: rgb(60, 60, 200);
+ }
+ .Habilidades {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Habilidades strong {
+    margin-left: 20%;
+
+  }
+  .Habilidades, .Status {
+    margin-top: 50px;
+  }
+  

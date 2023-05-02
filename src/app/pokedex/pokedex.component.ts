@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../pokemon.service';
 import { Pokemon } from '../pokemon';
 
@@ -7,13 +7,14 @@ import { Pokemon } from '../pokemon';
   templateUrl: './pokedex.component.html',
   styleUrls: ['./pokedex.component.css']
 })
-export class PokedexComponent {
+export class PokedexComponent implements OnInit {
   pokemon: Pokemon = {} as Pokemon;
   pokemonId: number = 1;
   MAX: number = 1010;
 
   constructor(private pokemonService: PokemonService) { }
 
+  
   ngOnInit(): void{
     this.loadPokemon();
   }
@@ -47,4 +48,5 @@ export class PokedexComponent {
     }
     this.loadPokemon();
   }
+  statOrder = [0,1,2,3,4,5]
 }

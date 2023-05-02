@@ -9,6 +9,7 @@ export interface Pokemon{
 
     id: number;
     photo: string;
+    
     abilities: {
         ability: {
             name: string
