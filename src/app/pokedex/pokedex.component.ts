@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../pokemon.service';
 import { Pokemon } from '../pokemon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokedex',
@@ -48,5 +49,7 @@ export class PokedexComponent implements OnInit {
     }
     this.loadPokemon();
   }
-  statOrder = [0,1,2,3,4,5]
+  public idSearch: string = '';
+
+  
 }
