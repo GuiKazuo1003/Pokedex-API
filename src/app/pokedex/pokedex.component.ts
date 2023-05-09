@@ -31,21 +31,21 @@ export class PokedexComponent implements OnInit {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${this.pokemonId}.png`;
 }
   ProximoPokemon(){
-    if (this.pokemonId < this.MAX){
-      this.pokemonId++;
+    if (this.pokemonId === this.MAX){
+      this.pokemonId = 1;
     }
     else{
-      this.pokemonId = 1;
+      this.pokemonId++;
     }
     this.loadPokemon();
   }
 
   AnteriorPokemon(){
-    if (this.pokemonId > this.MAX){
-      this.pokemonId--;
+    if (this.pokemonId === this.MAX){
+      this.pokemonId = 1;
     }
     else{
-      this.pokemonId = this.MAX;
+      this.pokemonId--;
     }
     this.loadPokemon();
   }
